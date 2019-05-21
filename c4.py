@@ -7,7 +7,7 @@ import re
 def getNothing(s):
     url = 'http://www.pythonchallenge.com/pc/def/linkedlist.php'
     params = {'nothing':s}
-    
+
     content = ''
     try:
         res = requests.get(url, params)
@@ -22,6 +22,7 @@ def getNothing(s):
 # nothing = 12345
 nothing = 8022
 nothing = 74258
+nothing = 66831
 
 while nothing:
     content = getNothing(nothing)
@@ -32,4 +33,4 @@ while nothing:
     else:
         nothing = ''
 
-print(content)
+print("last is", content)
