@@ -4,9 +4,10 @@
 
 # evil1.jpg
 # evil2.jpg
-# evil2.gfx
-# evil3
-# evil4
+# evil2.jpg evil2.gfx
+# evil3.jpg
+# evil4.jpg is txt: Bert is evil! go back!
+
 
 with open("evil2.gfx", 'rb') as f:
     content = f.read()
