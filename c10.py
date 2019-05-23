@@ -41,10 +41,14 @@ def stringCount3(aString):
 
     return re.sub(r'(\d)\1*', repl, aString)
 
+def stringCount4(aString):
+    lists = [str(len(m.group(0))) + m.group(1) for m in re.finditer(r"(\d)\1*", aString)]
+    return "".join(lists)
+
 
 s = '1'
 for i in range(30):
-    s = stringCount3(s)
+    s = stringCount4(s)
     # print(s)
 
 print(len(s))
