@@ -30,7 +30,7 @@ print(mail.subject)
 for att in mail.attachments:
     filename = att['filename']
     if not filename:
-        continue;
+        continue
     data = att['payload']
     if att['content_transfer_encoding'] == 'base64':
         data = base64.b64decode(data)
